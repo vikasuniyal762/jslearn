@@ -1,0 +1,132 @@
+first create the new folder
+then add some files 
+and open the git bash terminal and all commands will done into "GIT BASH"****
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript
+$ git status //for detect the repo files ******
+fatal: not a git repository (or any of the parent directories): .git
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript
+$ git init // for create a new repo ****** 
+Initialized empty Git repository in F:/Reactjstut/javascript/.git/
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status//for detect the repo commit files but we have to tell them to track the repo files the givebelow command *****
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        db.accdb
+        first.txt
+        myexcel.xlsx
+
+nothing added to commit but untracked files present (use "git add" to track
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git add -a // for track the repo  files 
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of s
+    --ignore-missing      check if - even missing - files are ignored in dr
+    --sparse              allow updating entries outside of the sparse-checcone
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are ated with NUL character
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git add --a // for track the repo  files adding the files 
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status //now you can track the files in repo ...
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   db.accdb
+        new file:   first.txt
+        new file:   myexcel.xlsx
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git commit -m "Initial Commit"  // but fisrt commit the file for repo
+[master (root-commit) d5d5547] Initial Commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 db.accdb
+ create mode 100644 first.txt
+ create mode 100644 myexcel.xlsx
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status // now tracking is complete *****
+On branch master
+nothing to commit, working tree clean
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git log // for whatever you change in file it will show the all logs whatever you chnaged****
+commit d5d5547553c5ec17f0f3bb6a69da88a6a72770dc (HEAD -> master)
+Author: vikas <vikasuniyal762@gmail.com>
+Date:   Thu Feb 24 21:50:02 2022 +0530
+
+    Initial Commit
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   first.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git add first.txt // here we commit staged for git "fist.txt"
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   first.txt
+{
+git init 
+git add --a 
+git commit - m "this is modifiedmyexcel"
+git status
+git log
+}
+
+rm -rf .git //delete the folders content delete
+pwd //present work directory
+ls // list the content 
+CD for change directory
