@@ -130,3 +130,206 @@ rm -rf .git //delete the folders content delete
 pwd //present work directory
 ls // list the content 
 CD for change directory
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript
+$ git init
+Initialized empty Git repository in F:/Reactjstut/javascript/.git/
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git remote
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git remote add origin https://github.com/vikasuniyal762/jslearn.git
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git remote
+origin
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git remote -v
+origin  https://github.com/vikasuniyal762/jslearn.git (fetch)
+origin  https://github.com/vikasuniyal762/jslearn.git (push)
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/vikasuniyal762/jslearn.gi
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ ^C
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git add -aa
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of error
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --sparse              allow updating entries outside of the sparse-checkout
+    --chmod (+|-)x        override the executable bit of the listed files
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separcharacter
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git add --a
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello.txt
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/vikasuniyal762/jslearn.gi
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git commit -m "this is modified text"
+[master (root-commit) ae154df] this is modified text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello.txt
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git log
+commit ae154df027234d5be59e930bcf8ff237af2e25f0 (HEAD -> master)
+Author: vikas <vikasuniyal762@gmail.com>
+Date:   Fri Feb 25 19:43:54 2022 +0530
+
+    this is modified text
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/vikasuniyal762/jslearn.gi
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ ^C
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git branch -mv origin master
+fatal: a branch named 'master' already exists
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git add --a
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git add .
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git commit -m 'message.
+>
+> cls
+> back
+> exit
+> ^C
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git commit -m 'message'
+On branch master
+nothing to commit, working tree clean
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git push -u origin master
+fatal: helper error (-1073741510): Unknown
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ ssh-keygen -t ed25519 -C "vikasuniyal762@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/vikas/.ssh/id_ed25519):
+/c/Users/vikas/.ssh/id_ed25519 already exists.
+Overwrite (y/n)?
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 442
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/vikas/.ssh/id_ed25519 (vikasuniyal762@gmail.com)
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ gir status
+bash: gir: command not found
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ ~/.ssh/id_ed25519.pub
+/c/Users/vikas/.ssh/id_ed25519.pub: line 1: ssh-ed25519: command not found
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ tail ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIdoyVGLBiLG/uSsw5+urCqN7gLaPIa9GJC3SZHHfqTo
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ ^C
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ tail ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIdoyVGLBiLG/uSsw5+urCqN7gLaPIa9GJC3SZHHfqTo
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git push -u origin master
+
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 72.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vikasuniyal762/jslearn.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+vikas@DESKTOP-LNJA2GN MINGW64 /f/Reactjstut/javascript (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
